@@ -16,6 +16,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": [
     "http://localhost",
     "http://localhost:3000",
+    "https://agri-scan-ui-t9uj.vercel.app",
 ]}})
 
 def predictm(model, img, class_names):
