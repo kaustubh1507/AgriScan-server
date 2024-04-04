@@ -131,7 +131,9 @@ def predict():
 
     # confidence = float(np.max(prediction[0]))
 
-
+@app.route('/favicon.ico')
+def favicon():
+    return "", 404
 
 if __name__ == '__main__':
     app.run(debug=True)
