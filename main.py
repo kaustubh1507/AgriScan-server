@@ -46,7 +46,7 @@ def predict():
     # image_batch = np.expand_dims(image_array, axis=0)
 
     if keywords == "1":
-        potato_m = tf.keras.models.load_model("../Models/potato_f")
+        potato_m = tf.keras.models.load_model("Models/potato_f")
         # potato_names = ['Early Blight', 'Late Blight', 'Healthy']
         class_names = ['Potato Early Blight', 'Potato Late Blight', 'Potato Healthy']
 
@@ -74,7 +74,7 @@ def predict():
         })
 
     elif keywords == "2":
-        bell_pepper_m = tf.keras.models.load_model("../Models/bell_pepper")
+        bell_pepper_m = tf.keras.models.load_model("Models/bell_pepper")
         class_names = ['Bacterial Spot', 'Healthy']
 
         # prediction = bell_pepper_m.predict(image_batch)
@@ -98,7 +98,7 @@ def predict():
         return jsonify(answer)
 
     elif keywords == "3":
-        tomato_m = tf.keras.models.load_model("../Models/tomato2")
+        tomato_m = tf.keras.models.load_model("Models/tomato2")
         class_names = ['Early Blight', 'Late Blight', 'Healthy']
 
         # prediction = tomato_m.predict(image_batch)
