@@ -31,7 +31,7 @@ def predictm(model, img, class_names):
 
 
 
-@app.route('/', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
 
     if 'image' not in request.files:
