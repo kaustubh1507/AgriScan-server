@@ -1,5 +1,6 @@
 import numpy as np
 from flask import Flask, request, jsonify
+from urllib.parse import quote 
 from PIL import Image
 from io import BytesIO
 import tensorflow as tf
